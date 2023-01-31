@@ -3,17 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Jaeda's Webpage'</title>
+    <!--Link the css page-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!--Display an icon next to the title-->
     <link rel="icon" href="img/volleyball-icon-ball-0.png" type="image/x-icon" />
 </head>
 <body>
+    <!--Create an h1 tag that contains my first name-->
     <h1>Jaeda</h1>
+    <!--Attach an image of me doing something I enjoy-->
     <img src="img/IMG_4128.jpg" height="300" width="300">
     <br />
 
+    <!--Create a paragraph tag explaining what I hope to get out of this class-->
     <p>What I hope to get out of this class: I love programming, but I have never learned a strongly typed language. I hope to gain a better understanding of how these languages work, and gain the skills necessary to learn more in the future.</p>
     <br />
 
+    <!--Create a list of the jobs I am most interested in having after graduation-->
     <p>Top three jobs I am most interested in pursuing</p>
     <ul>
         <li>#1 Cyber Security</li>
@@ -22,10 +28,15 @@
     </ul>
     <br />
 
+    <!--Create a form that allows final grades to be input by the user-->
     <form>
+        <!--Explain how to use the form-->
         <p>Enter your grades as decimal numbers (ex. 90% is 0.9)</p>
+        <!--Create the place for the javascript output to be displayed-->
         <p id="letterGrade"></p>
+        <!--Create a label for the input box-->
         <label>Assignments:</label>
+        <!--Create an input box and assign it an id-->
         <input id="assignmentsID" /> <br />
         <label>Group Project:</label>
         <input id="gpID" /> <br />
@@ -38,9 +49,10 @@
         <label>INTEX:</label>
         <input id="intexID" /> <br />
         <br/>
+        <!--Create a button to submit the form-->
         <input id="calculate" type="button" value="Calculate Grade" /> <br />
     </form>
-
+    <!--Link all the needed files-->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/jquery/jquery-3.6.3.min.js"></script>
     <script src="js/GradeCalculator.js"></script>
