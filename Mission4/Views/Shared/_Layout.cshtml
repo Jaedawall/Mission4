@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["title"]</title>
+    <!--Link the css page-->
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <!--Display an icon next to the title-->
+    <link rel="icon" href="~/img/volleyball-icon-ball-0.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!--Create the navigation bar to go between pages-->
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a> | </a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">GradeCalculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <!--Link all the needed files-->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/GradeCalculator.js"></script>
+</body>
+</html>
